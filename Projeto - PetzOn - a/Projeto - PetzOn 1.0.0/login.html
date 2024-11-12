@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetzOn | Login</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+        <nav aria-label="Menu principal">
+            <div class="logo-container">PetzOn<i class="fa-solid fa-web-awesome"></i></div>
+            <a href="./index.html#Bem-vindo" class="menu-item">Início</a>
+            <a href="./index.html#Sobre-nós" class="menu-item">Sobre Nós</a>
+            <a href="./index.html#Serviços" class="menu-item">Serviços</a>
+            <a href="./index.html#Contato" class="menu-item">Contato</a>
+            <br>
+        </nav>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="imagem"> <img src="./img/petss.png" alt="Imagem de Pets"> <div class="logo-container invertido">Login | PetzOn<i class="fa-solid fa-web-awesome"></i></div></div>
+            <div class="login">
+                <h1 class="login-title">Login do Administrador</h1>
+                <form id="loginForm">
+                    <span class="label-login"><i class="fa-solid fa-angle-right"> </i><label for="email">Email</label></span>
+                    <input type="email" name="email" id="email">
+                    <span class="label-login"><i class="fa-solid fa-angle-right"> </i><label for="senha">Senha</label></span>
+                    <input type="password" name="senha" id="password">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #098581;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav a:last-child {
+    margin-left: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "League Spartan", sans-serif;
+}
+
+nav>a {
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+nav>a:hover {
+    background-color: #0c9d98;
+}
+
+.logo-container {
+    margin: 0 24px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+
+.welcome {
+    margin-top: 60px; 
+    background-image: url(../img/pets.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome-title {
+    font-family: "League Spartan", sans-serif;
+    color: #D4A5E1;
+    font-size: 45px;
+    background-color: #6A1B9A;
+    padding: 15px 70px 5px 70px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.second {
+    font-size: 20px;
+    padding: 5px 40px 15px 40px;
+}
+
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 224px;
+}
+
+.titulo-box {
+    margin-top: 50px;
+}
+
+.titulo-box > h1 {
+    color: #098581;
+    font-family: "Rubik", sans-serif;
+    font-size: 35px;
+}
+
+.titulo-box > h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+.paragrafos {
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    color: #555;
+    width: 70%;
+}
+
+.servicos {
+    margin-top: 50px;
+    background-color: #6A1B9A;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos-title {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.servicos-title h1{
+    font-size: 30px;
+}
+
+.box-services {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 35px;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+}
+
+.item-service {
+    width: 200px;
+    height: 300px;
+    background-color: #9D4EDD;
+    border-radius: 7px;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, margin 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    color: white; 
+    cursor: default;
+}
+
+.box-services > hr {
+    margin: 0;
+    height: 80%;
+    filter: opacity(20%);
+}
+
+.item-service:hover {
+    background-color: #af70e3;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.343);
+    margin-bottom: 10px;
+}
+
+.item-service > i {
+    font-size: 35px;
+    margin-top: 10px;
+    color: #00fff7;
+}
+
+.item-service > h2 {
+    height: 30px;
+}
+
+.item-service > p {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.contato{
+    margin: 0px 224px 100px 224px;
+}
+.contato-container{
+margin-top: 50px;
+}
+.form-contato{
+    display: flex;
+    flex-direction: column;
+}
+.form-contato>label{
+    margin: 15px 0px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-contato>input{
+    width: 70%;
+    height: 30px;
+    padding: 4px;
+}
+
+.form-contato>textarea{
+    width: 69.6%;
+    height: 60px;
+    padding: 7px;
+}
+.form-contato>button{
+    margin-top: 50px;
+    background-color: #0c9d98;
+    width: 30%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.form-contato>button:hover{
+    background-color: #0eafa9;;
+}
+/* Footer */
+footer {
+    background-color: #054d4b ;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #00fff7;
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.siganos {
+    display: flex;
+    flex-direction: column;
+}
+
+.siganos li {
+    margin: 5px 0;
+}
+
+.footer-fim p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+footer p{
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+}

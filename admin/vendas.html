@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetzOn | Vendas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/vendas.js" defer></script>
+</head>
+
+<body>
+    <header class="menu-lateral">
+        <nav>
+            <div class="menu-title">
+                <h1>
+                    PetzOn <i class="fa-web-awesome fa-solid"></i>
+                    <hr> Dashboard
+                </h1>
+            </div>
+            <ul class="lista">
+                <a href="index.html">
+                    <li class="menu-item"><i class="fa-regular fa-rectangle-list "></i>Dashboard</li>
+                </a>
+                <a href="">
+                    <li class="menu-item active"><i class="fa-solid fa-store"></i>Registro de Vendas</li>
+                </a>
+                <a href="procedimentos.html">
+                    <li class="menu-item"><i class="fa-solid fa-receipt"></i>Registro de Procedimentos</li>
+                </a>
+                <a href="estoque.html">
+                    <li class="menu-item"><i class="fa-solid fa-boxes-stacked"></i>Registro de Estoque</li>
+                </a>
+
+                <a onclick="logout()">
+                    <li class="menu-item"><i class="fa-solid fas fa-power-off"></i>Sair</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-titulo">
+            <h1>Registro de Vendas</h1>
+        </div>
+
+        <div id="cadastroVendas" class="vendas-container">
+            <div class="cadastro">
+                <h2>Registrar Venda</h2>
+                <form id="formvendas">
+                    <label for="produto">Produto:</label>
+                    <input type="text" id="produto" required><br><br>
+                    <label for="quantidade">Quantidade Vendida:</label>
+                    <input type="number" id="quantidade" required><br><br>
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" required><br><br>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="relatorio">
+                <h2>Vendas</h2>
+                <table id="vendas">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Data</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+<script src="js/logic.js"></script>
+</body>
+
+</html>
